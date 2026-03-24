@@ -29,6 +29,11 @@ public class Application {
                 Motorisable motorisable = (Motorisable)vehicule;
                 motorisable.demarrer();
             }
+
+            if (vehicule instanceof Inclinable) {
+                Inclinable inclinable = (Inclinable)vehicule;
+                inclinable.incliner();
+            }
             // System.out.println(vehicule);
         }
     }
