@@ -8,8 +8,10 @@ public class Application {
         MailSubscriber mailSubscriber = new MailSubscriber();
         LogSubscriber logSubscriber = new LogSubscriber();
 
-        // produitRepository.subscribe(logSubscriber);
-        // produitRepository.subscribe(mailSubscriber);
+        produitRepository = new ProduitRepositoryDecorator(produitRepository);
+
+        ((Publisher)produitRepository).subscribe(logSubscriber);
+        ((Publisher)produitRepository).subscribe(mailSubscriber);
 
         List<Produit> produits = produitRepository.findAll();
 
