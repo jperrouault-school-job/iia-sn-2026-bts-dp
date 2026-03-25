@@ -1,9 +1,29 @@
 {
 	"folders": [
-
+		{
+			"path": "intro-java"
+		},
+		{
+			"path": "singleton"
+		},
+		{
+			"path": "factory"
+		},
+		{
+			"path": "builder"
+		},
+		{
+			"path": "demo-maven-builder"
+		},
+		{
+			"path": "observer"
+		},
+		{
+			"path": "decorator"
+		}
 	],
 	"settings": {
-		"java.jdt.ls.java.home": "/usr/lib/jvm/jdk-21.0.7-oracle-x64/",
+		"java.jdt.ls.java.home": "/usr/lib/jvm/jdk-21.0.9-oracle-x64/",
 		"terminal.integrated.defaultProfile.linux": "zsh",
 		"terminal.integrated.fontFamily": "Source Code Pro for Powerline",
 		"terminal.integrated.fontSize": 16,
