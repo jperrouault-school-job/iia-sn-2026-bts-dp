@@ -8,6 +8,8 @@ public class ProduitRepository {
     public List<Produit> findAll() {
         List<Produit> produits = new ArrayList<>();
 
+        System.out.println("Chargement des données ...");
+
         produits.add(Produit.builder()
             .nom("Parachute de France")
             .prix(new BigDecimal("9500"))
